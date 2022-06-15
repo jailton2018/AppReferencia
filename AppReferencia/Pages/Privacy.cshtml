@@ -1,0 +1,53 @@
+﻿@page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "Cadastrar Referência";
+}
+
+<div class="container">
+    <h1>@ViewData["Title"]</h1>
+<form class="needs-validation" novalidate>
+  <div class="form-row">
+    <div class="col-md-12 mb-12">
+      <label for="validationCustom01">Nome Empresa</label>
+      <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Mark" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-12 mb-12">
+      <label for="validationCustom02">Nome Funcionário</label>
+      <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Otto" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+   </div>
+
+  <div class="form-row">
+    <div class="col-md-12 mb-12">
+      <label for="validationCustom03">Cidade</label>
+      <input type="text" class="form-control" id="validationCustom03" placeholder="Cidade" required>
+      <div class="invalid-feedback">
+        Please provide a valid city.
+      </div>
+    </div>
+
+    <div class="col-md-3 mb-3">
+      <label for="validationCustom04">E-mail</label>
+      <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
+      <div class="invalid-feedback">
+        Please provide a valid state.
+      </div>
+    </div>
+    <div class="col-md-12 mb-12">
+      <label for="validationCustom05">Observação</label>
+      <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
+     </div>
+  </div> 
+
+
+  <button class="btn btn-success" type="submit">Salvar</button>
+</form>
+</div>
+
